@@ -9,4 +9,11 @@ describe("notes managment", () => {
     cy.contains('.note').click();
     cy.contains('h1').click();
   });
+
+  it('should create a note', () => { 
+    cy.visit("http://localhost:3001/");
+    cy.contains('.note').click();
+    cy.get('.note').type('New Note')
+
+   })
 });
