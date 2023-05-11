@@ -16,6 +16,7 @@ describe("notes managment", () => {
     cy.get('.note').type('New Note');
     cy.get('.note').contains('New Note').click();
     cy.get('.create-note').type('Some notes created');
+    cy.get('.create-note input').contains('New task created');
 
    })
 });
