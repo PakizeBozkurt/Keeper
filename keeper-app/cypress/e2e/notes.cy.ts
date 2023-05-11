@@ -13,7 +13,9 @@ describe("notes managment", () => {
   it('should create a note', () => { 
     cy.visit("http://localhost:3001/");
     cy.contains('.note').click();
-    cy.get('.note').type('New Note')
+    cy.get('.note').type('New Note');
+    cy.get('.note').contains('New Note').click();
+    cy.get('.create-note').type('Some notes created');
 
    })
 });
