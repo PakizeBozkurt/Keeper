@@ -1,6 +1,6 @@
 /// <reference types="Cypress" />
-describe("notes managment", () => {
-  it("should open and close the new note modal", () => {
+describe("create and manage notes", () => {
+  it("should open and close the new note", () => {
     cy.visit("http://localhost:3001/");
     cy.contains('.note').click();
     cy.get('.note').click({force: true});
