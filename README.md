@@ -9,3 +9,4 @@ Taken array and rendered seperate Note components for each item.
 Callback from the Note component to triggered a delete function.
 Used the filter function to filter out the item that needs deletion.
 Passed an id over to the Note component, passed it back to the App when deleting.
+ Tested with Cypress
