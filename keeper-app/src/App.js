@@ -4,6 +4,10 @@ import Header from "./Header";
 import Footer from "./Footer";
 import Note from "./Note";
 import CreateArea from "./CreateArea";
+import Form from "./Form";
+
+let userIsRegistered = true;
+
 
 function App() {
   const [notes, setNotes] = useState([]);
@@ -24,6 +28,10 @@ function App() {
 
   return (
     <div>
+      <div className="container">
+        <h1>Bookworm Library</h1>
+        <Form isRegistered={userIsRegistered} />
+      </div>
       <Header />
       <CreateArea onAdd={addNote} />
       {notes.map((noteItem, index) => {
